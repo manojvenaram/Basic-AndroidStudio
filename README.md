@@ -26,3 +26,14 @@ Display message give in MainActivity file.
 
 ## Step 7:
 Save and run the application.
+## PROGRAM:
+```
+/*
+Program to print the text “Hello World”.
+Developed by:
+Registeration Number :
+*/
+```
+## OUTPUT:
+## RESULT:
+Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
