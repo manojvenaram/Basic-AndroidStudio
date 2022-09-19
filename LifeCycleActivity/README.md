@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
 ![](2.png)
 ![](3.png)
 ![](4.png)
-![](5.png)
-![](6.png)
+![](7.png)
+![](8.png)
 
 ## RESULT:
 Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
