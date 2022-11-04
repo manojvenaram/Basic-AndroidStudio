@@ -28,9 +28,70 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the text “display screen of any search engine”.
-Developed by:
-Registeration Number :
+Developed by: MANOJ CHOUDHARY V
+Registeration Number :212221240025
 */
+```
+```
+## MainActivity.java
+```
+package com.example.exp6;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+
+public class MainActivity extends AppCompatActivity {
+    AutoCompleteTextView autocomplete;
+
+    String[] arr = { "Bing","Google","Yandex","Yahoo","DuckDuckGo","Swisscows","StartPage","Gibiru"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        autocomplete = (AutoCompleteTextView)
+                findViewById(R.id.autoCompleteTextView1);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                (this,android.R.layout.select_dialog_item, arr);
+
+        autocomplete.setThreshold(2);
+        autocomplete.setAdapter(adapter);
+    }
+}
+```
+## activity_main.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/example_autocompletetextview" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="-103dp"
+        android:layout_marginTop="106dp"
+        android:ems="10" />
+
+</RelativeLayout>
 ```
 
 ## OUTPUT
