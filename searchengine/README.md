@@ -32,7 +32,6 @@ Developed by: MANOJ CHOUDHARY V
 Registeration Number :212221240025
 */
 ```
-```
 ## MainActivity.java
 ```
 package com.example.exp6;
