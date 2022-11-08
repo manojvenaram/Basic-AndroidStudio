@@ -113,5 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
 ## RESULT
 Thus a Simple Android Application to open google page using Implicit Intents using Android Studio is developed and executed successfully.
